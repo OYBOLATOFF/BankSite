@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="yandex-verification" content="8a7cfb73869debfe" />
+    <script src="resources/scripts/jquery-3.6.3.min.js"></script>
+    <link rel="stylesheet" href="resources/styles/style.css">
+    <link rel="icon" type="image/png" href="resources/images/favicon.png" />
+    <title>Покупаем вместе - рассрочка по нормам Ислама</title>
+
+    <!-- Слайдер -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="resources/styles/slider.css">
+    <!-- JavaScript -->
+    <script src="resources/scripts/slider.js" defer></script>
+</head>
+<body cz-shortcut-listen="true">
+<div class="menu_for_mobile">
+    <hr>
+    <ul>
+        <!-- <li class="menu_for_mobile__link">
+            Как оформить
+            <div class="description">
+                Чтобы оформить рассрочку необходимо заполнить онлайн-заявку после расчёта стоимости в калькуляторе. Это не занимает много времени и состоит из нескольких этапов:
+                <ul style="margin-top: 15px;">
+                    <li>Заполнить заявку</li>
+                    <li>Получить ответ в течение 15 минут</li>
+                </ul><br>
+                При одобрении заявки, менеджер свяжется с Вами, чтобы приобрести выбранный товар в рассрочку. Не забудь первоначальный взнос 25% от стоимости товара.
+            </div>
+        </li> -->
+        <li class="menu_for_mobile__link">
+            <p>Схема работы</p>
+            <div class="description work_scheme">
+                <ol>
+                    <li>
+                        <i class="icon select_a_good_icon"></i> <span>Выберите товар</span>
+                    </li>
+                    <li>
+                        <i class="icon contact_us_icon"></i> <span>Свяжитесь с нами</span>
+                    </li>
+                    <li>
+                        <i class="icon make_an_installment_icon"></i> <span>Оформите рассрочку</span>
+                    </li>
+                    <li>
+                        <i class="icon pick_up_the_purchase_icon"></i> <span>Заберите покупку</span>
+                    </li>
+                </ol>
+            </div>
+        </li>
+        <li class="menu_for_mobile__link">
+            <p>Вопрос-ответ</p>
+            <div class="description">
+                <div class="questions_points">
+                    <div class="questions_item">
+                        <div class="question_title">Отличие от банковского займа?</div>
+                        <div class="question_explanation">
+                            <ul>
+                                <li>
+                                    Мы заключаем договор аренды с выкупом товара в рассрочку в рамках шариата.
+                                </li>
+                                <li>
+                                    В договоре не предусмотрены пени, Штрафы, комиссии, страховые взносы. Цена фиксирована в договоре от начала и до окончания договора.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="questions_item">
+                        <div class="question_title">Возможно ли оформлять с сельской пропиской?</div>
+                        <div class="question_explanation">
+                            Да в случае предоставления платёжеспособного поручителя с городской пропиской или по одобрению сотрудника.
+                        </div>
+                    </div>
+                    <div class="questions_item">
+                        <div class="question_title">Какие нужны документы?</div>
+                        <div class="question_explanation">
+                            <ul>
+                                <li>1. Паспорт</li>
+                                <li>2. Справка с место работы в зависимости от тарифа который выбрали </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="questions_item">
+                        <div class="question_title">Начисляют ли проценты?</div>
+                        <div class="question_explanation">
+                            Нет, только торговая наценка установленная в договоре
+                        </div>
+                    </div>
+                    <div class="questions_item">
+                        <div class="question_title">Есть ли первоначальный взнос?</div>
+                        <div class="question_explanation">
+                            Да, есть в размере 25% от стоимости товара.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="menu_for_mobile__link">
+            <p>Контакты</p>
+            <div class="description">
+                mail@pokupaem-vmeste.ru <br>
+                <a href="tel:+79883011020">+7 988 301-10-20</a>
+            </div>
+        </li>
+    </ul>
+    <div class="yandex_map">
+        <span>Где мы находимся</span>
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A933694ebc85fe12c243178351c691d155a7c4da43e562d81e2d822911a009049&amp;width=100%25&amp;height=360&amp;lang=ru_RU&amp;scroll=true"></script>
+    </div>
+</div>
+<div class="header_for_scroll">
+    <div class="header_for_scroll__container">
+        <!-- <div class="header_for_scroll__first_row">
+            <div class="header_for_scroll__social_medias"></div>
+            <div class="header_for_scroll__contacts"></div>
+        </div> -->
+        <div class="header_for_scroll__second_row _container">
+            <div class="header_for_scroll__logo">
+                <img src="resources/images/header/logo2.png" alt="Логотип">
+            </div>
+            <div class="header_for_scroll__nav">
+                <div class="header__menu">
+                    <!-- <a href="#" class="header__menu_link" id="how_to_issue_link">Как оформить</a> -->
+                    <a href="#" class="header__menu_link work_scheme_link">Схема работы</a>
+                    <a href="#" class="header__menu_link question_answer_link">Вопрос-ответ</a>
+                    <a href="#" class="header__menu_link contacts_link">Контакты</a>
+                </div>
+            </div>
+            <div class="header__burger">
+                <span></span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="request_form">
+    <div class="request_form_bg"></div>
+    <script data-b24-form="inline/16/ajv519" data-skip-moving="true">
+        (function(w,d,u){
+        var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);
+        var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+        })(window,document,'https://cdn-ru.bitrix24.ru/b24475302/crm/form/loader_16.js');
+    </script>
+</div>
+<div class="wrapper">
+    <div class="header">
+        <div class="header__container _container">
+            <div class="header__contacts">
+                <div class="header__social_medias">
+                    <div class="header__social instagram">
+                        <a href="#">
+                            <i></i><span></span>
+                        </a>
+                    </div>
+                    <div class="header__social whatsapp">
+                        <a href="https://wa.me/79883011020">
+                            <i></i>
+                            <span>Написать в WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="header__contact_info">
+                    <div class="phone">
+                        <i></i>
+                        <a href="tel:+79883011020">+7 988 301-10-20</a>
+                    </div>
+                    <div class="email">
+                        <i></i>
+                        <a href="mailto:mail@pokupaem-vmeste.ru">mail@pokupaem-vmeste.ru</a>
+                    </div>
+                    <!-- <div class="time_schedule">
+                        <i></i>
+                        <a href="#">Пн-Пт: 09:00-18:00</a>
+                    </div> -->
+                </div>
+            </div><hr>
+            <div class="header__nav">
+                <div class="header__logo">
+                    <img src="resources/images/header/logo2.png" alt="Логотип">
+                </div>
+                <div class="header__menu">
+                    <!-- <a href="#" class="header__menu_link" id="how_to_issue_link">Как оформить</a> -->
+                    <a href="#" class="header__menu_link work_scheme_link">Схема работы</a>
+                    <a href="#" class="header__menu_link question_answer_link">Вопрос-ответ</a>
+                    <a href="#" class="header__menu_link contacts_link">Контакты</a>
+                </div>
+                <div class="header__burger">
+                    <span></span>
+                </div>
+            </div>
+            <div class="header__text">
+                <div class="header__title">
+                    <h1>"Покупаем вместе"<br>рассрочка по нормам ислама</h1>
+                </div>
+                <div class="header__subtitle">
+                    <h2>Точная стоимость без изменений с течением времени</h3>
+                </div>
+            </div>
+    <div class="itc-slider" data-autoplay="true" data-interval="7000" data-loop="true" data-slider="itc-slider">
+        <div class="header__slider itc-slider__wrapper">
+            <div class="itc-slider__items">
+                <div class="itc-slider__item item_1">
+                    <!-- Контент 1 слайда -->
+                    1
+                </div>
+                <div class="itc-slider__item">
+                    <!-- Контент 2 слайда -->
+                    2
+                </div>
+                <div class="itc-slider__item">
+                <!-- Контент 3 слайда -->
+                3
+                </div>
+                <div class="itc-slider__item">
+                <!-- Контент 4 слайда -->
+                4
+                </div>
+                <div class="itc-slider__item">
+                <!-- Контент 5 слайда -->
+                5
+                </div>
+            </div>
+        </div>
+        <button class="itc-slider__btn itc-slider__btn_prev"></button>
+        <button class="itc-slider__btn itc-slider__btn_next"></button>
+        <ol class="itc-slider__indicators">
+        <li class="itc-slider__indicator" data-slide-to="0"></li>
+        <li class="itc-slider__indicator" data-slide-to="1"></li>
+        <li class="itc-slider__indicator" data-slide-to="2"></li>
+        <li class="itc-slider__indicator" data-slide-to="3"></li>
+        <li class="itc-slider__indicator" data-slide-to="4"></li>
+        </ol>
+    </div>
+            <div class="header__bonus_program">
+                <div class="bonus_program__title">
+                    <h1>Бонусная программа</h1>
+                </div>
+                <div class="bonus_program__row">
+                    <a href="#" class="bonus_program__item silver_card">
+                        Серебряная карта
+                    </a>
+                    <a href="#" class="bonus_program__item gold_card">
+                        Золотая карта
+                    </a>
+                    <a href="#" class="bonus_program__item platinum_card">
+                        Платиновая карта
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="content__container">
+            <div class="content__calculator _container">
+                <div class="calculator__title">
+                    КАЛЬКУЛЯТОР РАССРОЧКИ
+                </div><hr>
+                <div class="calculator__tariff_list">
+                    <h3>Наши тарифы</h3>
+                    <div class="super tariff_item active">
+                        Супер
+                    </div>
+                    <div class="optimal tariff_item">
+                        Оптимальный
+                    </div>
+                    <div class="simplified tariff_item">
+                        Упрощённый
+                    </div>
+                    <div class="simple tariff_item">
+                        Простой
+                    </div>
+                </div>
+                
+                <div class="calculator__form">
+                    <div class="calculator__form_item">
+                        <div class="form_item_title">
+                            Стоимость товара
+                        </div>
+                        <input type="number" name="valueOfGoodInput" class="form_item_number_input" step="100" min="3000" value="3000">
+                        <input type="range" name="valueOfGoodRange" min="3000" value="3000" step="100" class="form_item_range_input">
+                    </div>
+                    <div class="calculator__form_item">
+                        <div class="form_item_title">
+                            Минимальный взнос
+                        </div>
+                        <input type="number" name="downPaymentInput" class="form_item_number_input" value="750" step="100">
+                        <input type="range" name="downPaymentRange" class="form_item_range_input">
+                    </div>
+                    <div class="calculator__form_item">
+                        <div class="form_item_title">
+                            Срок рассрочки в месяцах
+                        </div>
+                        <select name="duration_of_installment" id="duration_of_installment">
+                            <!-- Тут будут генерироваться пункты -->
+                        </select>
+                    </div>
+                </div>
+                <div class="calculator__results">
+                    <div class="calculator__results_item">
+                        <div class="results_item_title">
+                            Ежемесячный платёж
+                        </div>
+                        <div class="results_item_value">
+                            <span id="monthlyPayment">1000р</span>
+                        </div>
+                    </div>
+                    <div class="calculator__results_item">
+                        <div class="results_item_title">
+                            <span>Наценка на рассрочку</span>
+                        </div>
+                        <div class="results_item_value">
+                            <span id="installmentMarkup">480р</span>
+                        </div>
+                    </div>
+                    <div class="calculator__results_item">
+                        <div class="results_item_title">
+                            Общая стоимость товара в рассрочку
+                        </div>
+                        <div class="results_item_value">
+                            <span id="totalCostOfGood">3480р</span>
+                        </div>
+                    </div>
+                    <div class="calculator__results_item">
+                        <div class="results_item_title">
+                            <!-- Введите ID номер для скидки -->
+                        </div>
+                        <!-- <input type="number"> -->
+                    </div>
+                </div>
+                <div class="calculator__installment_terms">
+                    <div class="terms simple_terms">
+                        <h2>УСЛОВИЯ ТАРИФА 'ПРОСТОЙ'</h2>
+                        <p>Самостоятельное оформление без поручителей</p>
+                    </div>
+                    <div class="terms simplified_terms">
+                        <h2>УСЛОВИЯ ТАРИФА 'УПРОЩЁННЫЙ'</h2>
+                        <p>Оформление с одним поручителем</p>
+                    </div>
+                    <div class="terms optimal_terms">
+                        <h2>УСЛОВИЯ ТАРИФА 'ОПТИМАЛЬНЫЙ'</h2>
+                        <p>Оформление с двумя поручителями</p>
+                    </div>
+                    <div class="terms super_terms">
+                        <h2>УСЛОВИЯ ТАРИФА 'СУПЕР'</h2>
+                        <p>Оформление с двумя поручителями</p>
+                    </div>
+                </div>
+                <div class="calculator__request_button">
+                    <a>Заполнить анкету</a>
+                </div>
+            </div>
+            <div class="content__how_to_issue _container">
+                <div class="how_to_issue__description">
+                    <div class="how_to_issue_description_title">
+                        <h1>Как оформить</h1>
+                    </div>
+                    <div class="how_to_issue_description_text">
+                        Чтобы оформить рассрочку необходимо заполнить онлайн-заявку после расчёта стоимости в калькуляторе. Это не занимает много времени и состоит из нескольких этапов:
+                        <ul class="how_to_issue_instruction">
+                            <li>
+                                Заполнить заявку
+                            </li>
+                            <li>
+                                Получить ответ от нашего менеджера
+                            </li>
+                        </ul>
+                        При одобрении заявки менеджер свяжется с вами чтобы приобрести выбранный товар
+                    </div>
+                </div>
+                <div class="how_to_issue_photo">
+                </div>
+            </div>
+            <div class="content__installment_terms">
+                <div class="installment_terms_photo"></div>
+                <div class="installment_terms_text">
+                    <div class="installment_terms_title">
+                        <h1>Условия рассрочки</h1>
+                    </div>
+                    <div class="installment_terms_points">
+                        <ul>
+                            <li>
+                                <img src="resources/images/other/passport.svg" alt="Наличие паспорта"> Паспорт
+                            </li>
+                            <li>
+                                <img src="resources/images/other/21+.svg" alt="Наличие паспорта"> Возраст 21+
+                            </li>
+                            <li>
+                                <img src="resources/images/other/house_registration.svg" alt="Наличие паспорта"> Прописка г. Махачкала/г. Каспийск
+                            </li>
+                            <li>
+                                <img src="resources/images/other/percent.svg" alt="Наличие паспорта"> Первоначальный взнос 25%
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="content__work_scheme">
+                <div class="work_scheme_title">
+                    <h1>Схема работы с рассрочкой</h1>
+                </div>
+                <ul class="work_scheme_points">
+                    <li>
+                        <i class="icon select_a_good_icon"></i>1. Выберите товар</li>
+                    <li>
+                        <i class="icon contact_us_icon"></i>2. Свяжитесь с нами</li>
+                    <li>
+                        <i class="icon make_an_installment_icon"></i>3. Оформите рассрочку</li>
+                    <li>
+                        <i class="icon pick_up_the_purchase_icon"></i>4. Заберите покупку</li>
+                </ul>
+            </div>
+            <div class="content__questions">
+                <div class="questions_text">
+                    <div class="questions_title">
+                        <h1>Остались вопросы?</h1>
+                    </div>
+                    <div class="questions_description">
+                        Возможно вы найдете ответы в часто задаваемых вопросах нашими клиентами
+                    </div>
+                </div>
+                <div class="questions_points">
+                    <div class="questions_item">
+                        <div class="question_title">Отличие от банковского займа?</div>
+                        <div class="question_explanation">
+                            <ul>
+                                <li>
+                                    Мы заключаем договор аренды с выкупом товара в рассрочку в рамках шариата.
+                                </li>
+                                <li>
+                                    В договоре не предусмотрены пени, Штрафы, комиссии, страховые взносы. Цена фиксирована в договоре от начала и до окончания договора.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="questions_item">
+                        <div class="question_title">Возможно ли оформлять с сельской пропиской?</div>
+                        <div class="question_explanation">
+                            Да в случае предоставления платёжеспособного поручителя с городской пропиской или по одобрению сотрудника.
+                        </div>
+                    </div>
+                    <div class="questions_item">
+                        <div class="question_title">Какие нужны документы?</div>
+                        <div class="question_explanation">
+                            <ul>
+                                <li>1. Паспорт</li>
+                                <li>2. Справка с место работы в зависимости от тарифа который выбрали </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="questions_item">
+                        <div class="question_title">Начисляют ли проценты?</div>
+                        <div class="question_explanation">
+                            Нет, только торговая наценка установленная в договоре
+                        </div>
+                    </div>
+                    <div class="questions_item">
+                        <div class="question_title">Есть ли первоначальный взнос?</div>
+                        <div class="question_explanation">
+                            Да, есть в размере 25% от стоимости товара.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content__our_contacts"  >
+                <div class="contacts_map">
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A933694ebc85fe12c243178351c691d155a7c4da43e562d81e2d822911a009049&amp;width=960&amp;height=600&amp;lang=ru_RU&amp;scroll=true"></script>
+                </div>
+                <div class="contacts_info">
+                    <div class="contacts_title">
+                        <h1>Наши контакты</h1>
+                    </div>
+                    <div class="contacts_items">
+                        <div class="contacts_item">
+                            г. Махачкала, ул Магомеда Ярагского, 61
+                        </div>
+                        <div class="contacts_item">
+                            <a href="tel:+79883011020">+7 988 301-10-20</a>
+                        </div>
+                        <div class="contacts_item">
+                            mail@pokupaem-vmeste.ru
+                        </div>
+                        <!-- <div class="contacts_item">
+                            Пн-Пт: 09:00-18:00
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer"></div>
+</div>
+<script src="resources/scripts/index.js"></script>
+</body>
+</html>
