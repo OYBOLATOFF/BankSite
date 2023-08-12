@@ -164,6 +164,33 @@ let tariff_titles = {
     'super': 'Супер'
 }
 
+// Нажатие на галочку соглашения
+$('#agreement').change(function (e) { 
+    $('.calculator__request_button').toggleClass('active');
+});
+
+// Нажатие на зелёную кнопку соглашения в popup
+$('.agree_with_rules_btn').on('click', function () {
+    $('.popup.agreement').addClass('hidden');
+    $('body').removeClass('blocked');
+
+    if (!$('#agree-checkbox').is(':checked')) {
+        $('#agree-checkbox').prop('checked', 'true');
+        $('.calculator__request_button').toggleClass('active');
+    }
+});
+
+// Всплытие попапа при нажатии на текст "Политикой конфиденциальности"
+$('#confident_policy_href').on('click', function () {
+    $('.popup.agreement').removeClass('hidden');
+    $('body').addClass('blocked');
+});
+
+$('.popup__background').on('click', function () {
+    $('.popup.agreement').addClass('hidden');
+    $('body').removeClass('blocked');
+});
+
 // При нажатии на кнопку "Заполнить анкету"
 $('.calculator__request_button').click(function (e) { 
     // var activeClass = $('.tariff_item.active').attr('class').split(' ')[0]; // Текущий тариф
@@ -184,8 +211,12 @@ $('.calculator__request_button').click(function (e) {
     // $('.b24-form-control').eq(6).val(durationOfInstallment); // Устанавливаем срок
     // $('.b24-form-control').eq(7).val(tariff_titles[activeClass]); // Устанавливаем тариф
     
-    $('.request_form').toggleClass('active');
-    $('body').addClass('blocked');
+    if ($(this).hasClass('active')) {
+        $('.request_form').toggleClass('active');
+        $('body').addClass('blocked');
+    } else {
+        alert('Вам нужно согласиться с политикой конфиденциальности чуть ниже')
+    }
 });
 
 $('.request_form_bg').click(function (e) { 
@@ -201,11 +232,6 @@ $(document).ready(function () {
 });
 
 var $container = $("html,body");
-// Скролл при нажатии на кнопку "Как оформить" (УДАЛЕНО)
-// $('#how_to_issue_link').click(function (e) { 
-//     var $scrollTo = $('.content__how_to_issue');
-//     $container.animate({scrollTop: $scrollTo.offset().top - $container.offset().top + $container.scrollTop()-150, scrollLeft: 0}, 1000);
-// });
 
 // Скролл при нажатии на кнопку "Схема работы"
 $('.work_scheme_link').click(function (e) {
