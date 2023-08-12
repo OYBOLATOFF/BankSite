@@ -564,7 +564,7 @@ i.icon {
 .calculator__request_button a {
     display: inline-block;
     position: relative;
-    background-color: #e0b359;
+    background-color: gray;
     text-transform: uppercase;
     padding: 1.3em 1em 1.3em 3.5em;
     border-radius: 40px;
@@ -573,7 +573,11 @@ i.icon {
     cursor: pointer;
 }
 
-.calculator__request_button a:hover {
+.calculator__request_button.active a {
+    background-color: #e0b359;
+}
+
+.calculator__request_button.active a:hover {
     box-shadow: 0 0 10px 5px #dab15ea5;
 }
 
@@ -1047,6 +1051,63 @@ input[type="range"]::-webkit-slider-thumb {
     background: transparent;
   }
 
+  .popup {
+    background: rgba(0, 0, 0, 0.4);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s ease-in-out;
+  }
+
+  .popup__background {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  .popup.hidden {
+    transform: scale(0);
+  }
+
+  .popup__content {
+    width: 50%;
+    background-color: white;
+    padding: 2em;
+    z-index: 1;
+    border-radius: 15px;
+  }
+
+  .agree_with_rules_btn {
+    margin-top: 20px;
+    padding: 0.5em;
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    border: 0px;
+    font-size: 20px;
+    transition: .15s ease-in-out;
+  }
+
+  .agree_with_rules_btn:hover {
+    box-shadow: 0 0 10px 5px rgb(0, 167, 0);
+  }
+
+  .assignments {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
 @media (max-width: 790px) {
     .work_scheme_points li {
         width: 100%;
@@ -1064,6 +1125,21 @@ input[type="range"]::-webkit-slider-thumb {
 
 /* Для маленьких телефонов */
 @media (max-width: 430px) {
+    .popup__content {
+        width: 100%;
+        scale: 0.8;
+        height: 90%;
+        overflow: scroll;
+    }
+
+    .assignments {
+        flex-direction: column;
+    }
+
+    .assignments > p {
+        margin-bottom: 10px;
+    }
+
     .b24-form {
         width: 100%;
         scale: 0.8;
