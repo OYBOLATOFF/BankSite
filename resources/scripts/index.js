@@ -59,7 +59,7 @@ function changeConditionForForm() {
 
     // Изменяем выпадающий список с месяцами рассрочки
     $('select[name="duration_of_installment"]').html('');
-    for (var i = 1; i <= maxPeriod; i++) {
+    for (var i = 2; i <= maxPeriod; i++) {
         $('select[name="duration_of_installment"]').append(`<option value="${i}">${i}</option>`);
     }
 }
